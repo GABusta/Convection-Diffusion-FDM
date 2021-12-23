@@ -1,0 +1,11 @@
+Dirichlet - Lado izq. --ya que suponemos que la concentración en dicho lugar es cero y que la misma es arrastrada en dirección de la corriente. Además necesitamos "fijar" el dominio de nuestro problema
+
+Neumann,derivada = 0, en los demás bordes, ya que necesitamos que se manifieste que dichos nodos almacenan concentración. Si resolviéramos un problema térmico, esos serían nodos adiabáticos.
+
+Cond. inicial = 0, concentración nula en todos los nodos incógnitas (salvo el nodo fuente), ya que partimos de la hipótesis de que en el instante inicial no existe contaminante.
+
+Nodo fuente, con el valor de la concetración diario, la cual disminuye su intensidad según un factor "k" dependiente tmb del tiempo.
+
+Velocidad, distribución parabólica, donde el dato es la velocidad media (con ella calculamos la función cuadrática).
+
+En cuanto a la discretización, cumpliremos con las condiciones establecidas en al teoría para cada método pero deberemos "fijar" alguna de las condiciones e ir tanteando hasta obtener algún resultado más óptimo.
